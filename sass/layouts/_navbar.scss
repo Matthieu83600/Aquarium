@@ -44,13 +44,12 @@
     inline-size: 100%;
   }
 }
-
+/* Responsive */
 @media (max-width: 1130px) {
   .l-main-nav__link {
     margin-inline: 8px;
   }
 }
-
 @media (max-width: 920px) {
   .l-main-nav {
     top: 0;

@@ -1,1 +1,46 @@
 @use "../base/theme";
+
+.l-main-nav {
+  position: absolute;
+  top: 21px;
+  inline-size: 100%;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    font-size: theme.$fs-33;
+    font-family: theme.$heading-antic-didone;
+    color: theme.$white-main;
+  }
+  &__toggle-button {
+    display: none;
+  }
+  &__list {
+    flex-shrink: 0;
+    list-style: none;
+    display: flex;
+  }
+  &__link {
+    font-size: theme.$fs-16;
+    font-family: theme.$base-text-lato;
+    color: theme.$white-main;
+    margin-inline: 16px;
+  }
+  &__phonenumber {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__phonelogo {
+    margin-inline-end: 7px;
+  }
+  &__phonedigits {
+    font-family: theme.$base-text-lato;
+    color: theme.$white-main;
+  }
+  &__logo,
+  &__phonenumber {
+    inline-size: 100%;
+  }
+}

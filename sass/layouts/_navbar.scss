@@ -44,3 +44,60 @@
     inline-size: 100%;
   }
 }
+
+@media (max-width: 1130px) {
+  .l-main-nav__link {
+    margin-inline: 8px;
+  }
+}
+
+@media (max-width: 920px) {
+  .l-main-nav {
+    top: 0;
+    padding-block: 14px;
+    position: relative;
+    &--active {
+      background-color: theme.$dark-black;
+      border-block-end: 1px solid rgba(theme.$white-main, 0.6);
+    }
+    &--active &__list,
+    &--active &__phonenumber {
+      display: flex;
+    }
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__logo {
+      inline-size: auto;
+      margin-inline-end: auto;
+      font-size: theme.$fs-22;
+    }
+    &__toggle-button {
+      display: inline-flex;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    &__toggle-logo {
+      inline-size: theme.$fs-24;
+    }
+    &__list {
+      flex-direction: column;
+      inline-size: 100%;
+      margin-block: 20px;
+    }
+    &__link {
+      display: inline-block;
+      padding-block: 16px;
+      margin-inline: 0;
+    }
+    &__phonenumber {
+      padding-block-end: 16px;
+      justify-content: flex-start;
+    }
+    &__list,
+    &__phonenumber {
+      display: none;
+    }
+  }
+}

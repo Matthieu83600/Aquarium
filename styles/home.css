@@ -133,7 +133,29 @@ body {
 
 .home-header {
   background-color: #0c0e0d;
-  height: 674px;
+  block-size: 674px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.home-header__faded-bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  inline-size: 50%;
+  block-size: 100%;
+  background-color: #0c0e0d;
+  box-shadow: 0 0 100px 200px #0c0e0d;
+}
+.home-header__tentacles {
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  top: 0;
+  inline-size: 50%;
+  block-size: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=home.css.map */

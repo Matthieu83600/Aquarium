@@ -8,5 +8,27 @@ body {
 
 .home-header {
   background-color: base.$dark-black;
-  height: 674px;
+  block-size: 674px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &__faded-bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    background-color: base.$dark-black;
+    box-shadow: 0 0 100px 200px base.$dark-black;
+  }
+  &__tentacles {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 0;
+    inline-size: 50%;
+    block-size: 100%;
+    object-fit: cover;
+  }
 }

@@ -1,6 +1,8 @@
 @use "../base";
 @use "../layouts/navbar";
 @use "../utils/classes";
+@use "../utils/typography";
+@use "../components/links";
 
 body {
   font-family: base.$base-text-lato;
@@ -9,6 +11,7 @@ body {
 .home-header {
   background-color: base.$dark-black;
   block-size: 674px;
+  padding-block-start: 202px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -30,5 +33,43 @@ body {
     inline-size: 50%;
     block-size: 100%;
     object-fit: cover;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    block-size: 100%;
+    color: base.$white-main;
+  }
+  &__surtitle {
+    font-size: base.$fs-18;
+    font-weight: 300;
+  }
+  &__title {
+    font-size: base.$fs-80;
+    margin-block-end: 24px;
+  }
+  &__subtitle {
+    font-size: base.$fs-18;
+    font-weight: 300;
+    margin-block-end: 14px;
+  }
+  &__cta {
+    min-inline-size: 236px;
+    align-self: flex-start;
+  }
+  &__info {
+    margin-block-start: auto;
+    display: flex;
+    gap: 32px;
+    margin-block-end: 64px;
+    &-paragraph {
+      display: inline-flex;
+      align-items: center;
+      font-family: base.$base-text-raleway;
+    }
+    &-icon {
+      inline-size: base.$fs-24;
+      margin-inline-end: 8px;
+    }
   }
 }

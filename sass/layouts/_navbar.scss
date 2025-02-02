@@ -55,7 +55,6 @@
   .l-main-nav {
     top: 0;
     padding-block: 14px;
-    position: relative;
     &--active {
       background-color: theme.$dark-black;
       border-block-end: 1px solid rgba(theme.$white-main, 0.6);

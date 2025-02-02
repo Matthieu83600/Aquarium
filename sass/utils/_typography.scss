@@ -1,0 +1,7 @@
+@use "../base/theme";
+
+.u-main-title {
+  font-family: theme.$heading-antic-didone;
+  color: theme.$white-main;
+  font-weight: 300;
+}

@@ -1,4 +1,4 @@
-@use "../base/theme";
+@use "../base";
 
 .l-main-nav {
   position: absolute;
@@ -9,9 +9,9 @@
     align-items: center;
   }
   &__logo {
-    font-size: theme.$fs-33;
-    font-family: theme.$heading-antic-didone;
-    color: theme.$white-main;
+    font-size: base.$fs-33;
+    font-family: base.$heading-antic-didone;
+    color: base.$white-main;
   }
   &__toggle-button {
     display: none;
@@ -22,9 +22,9 @@
     display: flex;
   }
   &__link {
-    font-size: theme.$fs-16;
-    font-family: theme.$base-text-lato;
-    color: theme.$white-main;
+    font-size: base.$fs-16;
+    font-family: base.$base-text-lato;
+    color: base.$white-main;
     margin-inline: 16px;
   }
   &__phonenumber {
@@ -36,8 +36,8 @@
     margin-inline-end: 7px;
   }
   &__phonedigits {
-    font-family: theme.$base-text-lato;
-    color: theme.$white-main;
+    font-family: base.$base-text-lato;
+    color: base.$white-main;
   }
   &__logo,
   &__phonenumber {
@@ -45,7 +45,7 @@
   }
 }
 /* Responsive */
-@media (max-width: 1130px) {
+@media (max-width: base.$lg-breakpoint) {
   .l-main-nav__link {
     margin-inline: 8px;
   }
@@ -55,8 +55,8 @@
     top: 0;
     padding-block: 14px;
     &--active {
-      background-color: theme.$dark-black;
-      border-block-end: 1px solid rgba(theme.$white-main, 0.6);
+      background-color: base.$dark-black;
+      border-block-end: 1px solid rgba(base.$white-main, 0.6);
     }
     &--active &__list,
     &--active &__phonenumber {
@@ -68,7 +68,7 @@
     &__logo {
       inline-size: auto;
       margin-inline-end: auto;
-      font-size: theme.$fs-22;
+      font-size: base.$fs-22;
     }
     &__toggle-button {
       display: inline-flex;
@@ -77,7 +77,7 @@
       cursor: pointer;
     }
     &__toggle-logo {
-      inline-size: theme.$fs-24;
+      inline-size: base.$fs-24;
     }
     &__list {
       flex-direction: column;

@@ -1,0 +1,49 @@
+@use "../base";
+
+.l-main-footer {
+  background-color: base.$dark-black;
+  &__container {
+    padding-block: 64px;
+  }
+  &__upper-content {
+    display: flex;
+    align-items: center;
+    margin-block-end: 48px;
+  }
+  &__logo,
+  &__social-networks {
+    inline-size: 100%;
+  }
+  &__logo {
+    font-size: base.$fs-33;
+    font-family: base.$heading-antic-didone;
+    color: base.$white-main;
+    display: inline-block;
+  }
+  &__links-nav {
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+  }
+  &__link {
+    color: base.$white-main;
+    margin-inline: 16px;
+  }
+  &__social-networks {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__social-network-logo-container {
+    display: flex;
+  }
+  &__social-network-logo {
+    inline-size: base.$fs-33;
+  }
+  &__copyright {
+    color: base.$white-main;
+    border-block-start: 1px solid rgba(base.$white-main, 0.25);
+    padding-block-start: 32px;
+    text-align: center;
+  }
+}

@@ -160,6 +160,53 @@ body {
     display: none;
   }
 }
+.l-main-footer {
+  background-color: #0c0e0d;
+}
+.l-main-footer__container {
+  padding-block: 64px;
+}
+.l-main-footer__upper-content {
+  display: flex;
+  align-items: center;
+  margin-block-end: 48px;
+}
+.l-main-footer__logo, .l-main-footer__social-networks {
+  inline-size: 100%;
+}
+.l-main-footer__logo {
+  font-size: 2.0625rem;
+  font-family: "Antic Didone";
+  color: #fff;
+  display: inline-block;
+}
+.l-main-footer__links-nav {
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+}
+.l-main-footer__link {
+  color: #fff;
+  margin-inline: 16px;
+}
+.l-main-footer__social-networks {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.l-main-footer__social-network-logo-container {
+  display: flex;
+}
+.l-main-footer__social-network-logo {
+  inline-size: 2.0625rem;
+}
+.l-main-footer__copyright {
+  color: #fff;
+  border-block-start: 1px solid rgba(255, 255, 255, 0.25);
+  padding-block-start: 32px;
+  text-align: center;
+}
+
 .u-container {
   max-inline-size: 1100px;
   padding-inline: 20px;

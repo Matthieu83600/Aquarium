@@ -141,6 +141,9 @@ body {
   line-height: 155.55%;
   text-transform: uppercase;
 }
+.u-section-h2--light {
+  color: #fff;
+}
 
 .u-basic-text {
   font-size: 1.125rem;
@@ -148,6 +151,9 @@ body {
   font-family: "Lato";
   font-weight: 300;
   line-height: 177.77%;
+}
+.u-basic-text--light {
+  color: #fff;
 }
 
 /* Responsive */
@@ -339,6 +345,55 @@ body {
   .discover-section__text {
     margin-block-end: 0;
   }
+}
+/* Dishes section */
+.dishes-section {
+  background-color: #0c0e0d;
+}
+.dishes-section__container {
+  padding-block: 90px;
+  display: flex;
+}
+.dishes-section__content {
+  margin-inline-end: 105px;
+}
+.dishes-section__h2 {
+  margin-block-end: 16px;
+}
+.dishes-section__basic-text {
+  margin-block-end: 48px;
+}
+.dishes-section__photos {
+  display: flex;
+  margin-block-end: 56px;
+  gap: 16px;
+}
+.dishes-section__card-name, .dishes-section__card-price {
+  color: #fff;
+}
+.dishes-section__card-name {
+  margin-block-start: 16px;
+  font-size: 1.125rem;
+  line-height: 133.33%;
+}
+.dishes-section__card-price {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.dishes-section__links {
+  display: flex;
+  gap: 24px;
+}
+.dishes-section__link {
+  min-width: 200px;
+}
+.dishes-section__side-image-container {
+  margin-block-start: -180px;
+  text-align: center;
+  color: #fff;
+}
+.dishes-section__side-image {
+  margin-block-end: 16px;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -172,3 +172,53 @@ body {
     }
   }
 }
+/* Dishes section */
+.dishes-section {
+  background-color: base.$dark-black;
+  &__container {
+    padding-block: 90px;
+    display: flex;
+  }
+  &__content {
+    margin-inline-end: 105px;
+  }
+  &__h2 {
+    margin-block-end: 16px;
+  }
+  &__basic-text {
+    margin-block-end: 48px;
+  }
+  &__photos {
+    display: flex;
+    margin-block-end: 56px;
+    gap: 16px;
+  }
+  &__card-name,
+  &__card-price {
+    color: base.$white-main;
+  }
+  &__card-name {
+    margin-block-start: 16px;
+    font-size: base.$fs-18;
+    line-height: 133.33%;
+  }
+  &__card-price {
+    font-size: base.$fs-14;
+    font-weight: 300;
+  }
+  &__links {
+    display: flex;
+    gap: 24px;
+  }
+  &__link {
+    min-width: 200px;
+  }
+  &__side-image-container {
+    margin-block-start: -180px;
+    text-align: center;
+    color: base.$white-main;
+  }
+  &__side-image {
+    margin-block-end: 16px;
+  }
+}

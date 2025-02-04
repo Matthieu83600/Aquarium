@@ -490,5 +490,72 @@ body {
     padding-block: 48px 120px;
   }
 }
+/* Reservation section */
+.reservation-section {
+  background-color: #0c0e0d;
+}
+.reservation-section__container {
+  display: flex;
+  padding-block: 90px;
+}
+.reservation-section__h2 {
+  margin-block-end: 16px;
+}
+.reservation-section__info {
+  inline-size: 100%;
+}
+.reservation-section__schedule-sunday, .reservation-section__dress-code {
+  margin-block-end: 31px;
+}
+.reservation-section__demarcation {
+  inline-size: 4px;
+  background-color: #fff;
+  margin-inline: 62px;
+}
+.reservation-section__more-info {
+  padding-inline-start: 62px;
+}
+.reservation-section__location {
+  margin-block-end: 7px;
+}
+.reservation-section__social-networks {
+  margin-block-end: 39px;
+}
+.reservation-section__link {
+  color: #fff;
+  margin-inline-start: 4px;
+  text-decoration: underline;
+}
+.reservation-section__end-picture {
+  inline-size: 100%;
+  max-block-size: 237px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+/* Responsive values section */
+@media (max-width: 1130px) {
+  .reservation-section__container {
+    padding-block: 72px 128px;
+    flex-direction: column;
+    text-align: center;
+    max-inline-size: 600px;
+  }
+  .reservation-section__dress-code {
+    max-inline-size: 400px;
+    margin-inline: auto;
+  }
+  .reservation-section__demarcation {
+    inline-size: 50%;
+    block-size: 1px;
+    margin-block: 42px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 600px) {
+  .reservation-section__container {
+    padding-block: 48px 120px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

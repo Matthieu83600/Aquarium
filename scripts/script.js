@@ -12,6 +12,6 @@ function toggleNavigation() {
   mainNav.classList.toggle("l-main-nav--active");
 }
 
-const navLinks = document.querySelectorAll("l-main-nav__link");
+const navLinks = document.querySelectorAll(".l-main-nav__link");
 
 navLinks.forEach((link) => link.addEventListener("click", toggleNavigation));

@@ -181,6 +181,37 @@ body {
   display: inline-block;
 }
 
+.c-form-input {
+  padding-block: 12px;
+  padding-inline: 16px;
+  font-family: "Lato";
+  border: 1px solid rgba(12, 14, 13, 0.75);
+  inline-size: 100%;
+}
+
+.c-form-textarea {
+  padding-block: 9px;
+  padding-inline: 16px;
+  min-block-size: 131px;
+  resize: none;
+  font-family: "Lato";
+  border: 1px solid rgba(12, 14, 13, 0.75);
+  inline-size: 100%;
+}
+
+.c-gold-button {
+  font-family: "Lato";
+  font-size: 1.125rem;
+  color: #0c0e0d;
+  background-color: #e78c15;
+  padding-inline: 9px;
+  padding-block: 9px;
+  line-height: 133.33%;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
 body {
   font-family: "Lato";
 }
@@ -555,6 +586,63 @@ body {
 @media (max-width: 600px) {
   .reservation-section__container {
     padding-block: 48px 120px;
+  }
+}
+/* Contact section */
+.contact-section {
+  display: flex;
+  gap: 113px;
+  padding-block: 104px;
+}
+.contact-section__h2 {
+  margin-block-end: 26px;
+}
+.contact-section__basic-text {
+  margin-block-end: 24px;
+}
+.contact-section__form {
+  display: flex;
+  gap: 57px;
+}
+.contact-section__side-img {
+  align-self: flex-start;
+}
+.contact-section__label {
+  font-size: 0.875rem;
+}
+.contact-section__input {
+  margin-block: 8px 16px;
+}
+.contact-section__textarea {
+  margin-block: 8px 32px;
+}
+.contact-section__submit-button {
+  inline-size: 100%;
+}
+
+/* Responsive values section */
+@media (max-width: 1130px) {
+  .contact-section {
+    padding-block: 72px 112px;
+    flex-direction: column;
+    max-inline-size: 600px;
+    text-align: center;
+  }
+  .contact-section__side-img {
+    display: none;
+  }
+  .contact-section__main-decoration-img {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .contact-section {
+    padding-block: 48px 112px;
+  }
+}
+@media (max-width: 450px) {
+  .contact-section {
+    padding-block: 62px;
   }
 }
 

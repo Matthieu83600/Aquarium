@@ -3,9 +3,6 @@
 @use "../layouts";
 @use "../utils";
 
-body {
-  font-family: base.$base-text-lato;
-}
 /* Header */
 .home-header {
   background-color: base.$dark-black;

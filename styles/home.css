@@ -284,10 +284,6 @@ body {
     font-size: 1rem;
   }
 }
-body {
-  font-family: "Lato";
-}
-
 /* Header */
 .home-header {
   background-color: #0c0e0d;

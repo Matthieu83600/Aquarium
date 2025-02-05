@@ -352,6 +352,33 @@ body {
 }
 
 /* Responsive */
+@media (max-width: 1130px) {
+  .menu {
+    padding-block: 0 127px;
+  }
+  .menu__container {
+    margin-block-start: 16px;
+    padding-inline: 20px;
+    padding-block: 48px 127px;
+  }
+  .menu__h2 {
+    font-size: 1.5rem;
+    margin-block-end: 24px;
+  }
+  .menu__flex-dishes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__demarcation {
+    display: none;
+  }
+  .dishes-list__dish-name {
+    font-size: 1.125rem;
+  }
+  .dishes-list__dish-description {
+    font-size: 0.875rem;
+  }
+}
 @media (max-width: 920px) {
   /* Menu header */
   .menu-header {

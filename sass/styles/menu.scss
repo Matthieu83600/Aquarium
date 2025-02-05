@@ -68,6 +68,35 @@
   }
 }
 /* Responsive */
+@media (max-width: base.$lg-breakpoint) {
+  .menu {
+    padding-block: 0 127px;
+    &__container {
+      margin-block-start: 16px;
+      padding-inline: 20px;
+      padding-block: 48px 127px;
+    }
+    &__h2 {
+      font-size: base.$fs-24;
+      margin-block-end: 24px;
+    }
+    &__flex-dishes {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__demarcation {
+      display: none;
+    }
+  }
+  .dishes-list {
+    &__dish-name {
+      font-size: base.$fs-18;
+    }
+    &__dish-description {
+      font-size: base.$fs-14;
+    }
+  }
+}
 @media (max-width: 920px) {
   /* Menu header */
   .menu-header {

@@ -1,0 +1,27 @@
+@use "../base";
+@use "../components";
+@use "../layouts";
+@use "../utils";
+
+/* Menu header */
+.menu-header {
+  block-size: 594px;
+  background-image: url("../assets/images/bg-menu-page.jpg");
+  background-size: cover;
+  padding-block-start: 240px;
+  &__main-title {
+    font-size: base.$fs-60;
+    text-align: center;
+  }
+}
+/* Responsive */
+@media (max-width: 920px) {
+  /* Menu header */
+  .menu-header {
+    block-size: 300px;
+    padding-block-start: 125px;
+    &__main-title {
+      font-size: base.$fs-40;
+    }
+  }
+}

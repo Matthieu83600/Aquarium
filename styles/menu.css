@@ -296,6 +296,61 @@ body {
   text-align: center;
 }
 
+/* Menu section */
+.menu {
+  padding-block: 64px 176px;
+}
+.menu__container {
+  border: 1px solid #7d4700;
+  background-color: rgba(12, 14, 13, 0.03);
+  padding-inline: 160px;
+  padding-block: 80px;
+}
+.menu__h2 {
+  font-family: "Antic Didone";
+  color: #7d4700;
+  text-align: center;
+  margin-block-end: 42px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+.menu__flex-dishes {
+  display: flex;
+  justify-content: center;
+}
+.menu__flex-dishes--spacing-bottom {
+  margin-block-end: 48px;
+}
+.menu__demarcation {
+  flex-shrink: 0;
+  margin-inline: 50px;
+  background-color: #7d4700;
+  inline-size: 1px;
+}
+
+.dishes-list {
+  list-style: none;
+  text-align: center;
+  flex-shrink: 0;
+  inline-size: 250px;
+}
+.dishes-list__dish-name {
+  font-family: "Lato";
+  color: #0c0e0d;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 133.33%;
+  margin-block-end: 4px;
+}
+.dishes-list__dish-description {
+  font-family: "Lato";
+  font-weight: 300;
+  line-height: 128%;
+  margin-block-end: 16px;
+}
+
 /* Responsive */
 @media (max-width: 920px) {
   /* Menu header */

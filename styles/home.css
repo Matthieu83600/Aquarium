@@ -207,6 +207,31 @@ body {
   text-align: center;
 }
 
+@media (max-width: 920px) {
+  .l-main-footer__container {
+    padding-block: 56px;
+  }
+  .l-main-footer__upper-content {
+    flex-direction: column;
+    margin-block-end: 32px;
+  }
+  .l-main-footer__logo {
+    margin-block-end: 40px;
+  }
+  .l-main-footer__logo, .l-main-footer__social-networks {
+    inline-size: auto;
+  }
+  .l-main-footer__links-nav {
+    max-inline-size: 275px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-block-end: 44px;
+  }
+  .l-main-footer__link {
+    margin-inline: 4px;
+  }
+}
 .u-container {
   max-inline-size: 1100px;
   padding-inline: 20px;
